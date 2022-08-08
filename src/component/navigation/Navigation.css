@@ -15,8 +15,25 @@
     .navigation-items {
         display: none;
     }
-    .navigation-sideBar {
+    .navigation {
+        height: 83px;
+        background-color: #fcfbef;
+    }
+    .navigation-sidebar {
         margin-right: 10%;
+    }
+    .navigation-items-mobile {
+        min-height: 200px;
+        background-color: #134d0a;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 50px 10% 50px 10%;
+    }
+    .navigation-items-mobile-link {
+        border-bottom: 1px solid white;
+        color: white;
+        text-decoration: none;
     }
 }
 
@@ -24,7 +41,10 @@
     .navigation-items {
         margin-right: 10%;
     }
-    .navigation-sideBar {
+    .navigation-sidebar {
+        display: none;
+    }
+    .navigation-phone-items {
         display: none;
     }
     .navigation-items a {
@@ -38,19 +58,3 @@
         /* transform: scaleY(5px); */
     }
 }
-
-/* .test {
-    width: 100%;
-    background-color: #4ca53e;
-    height: 145px;
-}
-
-.test1 {
-    width: 100%;
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-} */
