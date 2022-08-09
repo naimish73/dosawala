@@ -7,15 +7,18 @@
     .firstPage {
         background-color: #59b54b;
         width: 100%;
-        height: 100vh;
+        height: calc(100vh - 114px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: relative;
     }
     .firstPage-waveImage {
-        object-fit: contain;
+        position: absolute;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        transform: translate(0px, -76px);
+        /* transform: translate(0, -7px); */
     }
     .firstPage-text {
         font-family: "Poppins";
@@ -30,6 +33,7 @@
         font-size: 72px;
         font-weight: 700;
         text-align: center;
+        line-height: 90px;
     }
     .firstPage-text-small {
         color: #f9f9f9;
@@ -48,7 +52,24 @@
         border-radius: 50px;
         width: 222px;
         height: 44px;
-        margin-top: 13px;
-        /* padding: 5px 0 5px 0; */
+        font-size: 18px;
+        margin-top: 90px;
+    }
+    .dosaImage {
+        display: flex;
+        justify-content: space-between;
+        /* transform: translate(0, -50px); */
+    }
+    .dosaImage1 {
+        width: 35%;
+        object-fit: contain;
+        z-index: 1;
+        transform: translate(0, -100px);
+    }
+    .dosaImage2 {
+        width: 35%;
+        object-fit: contain;
+        z-index: 1;
+        transform: translate(0, -100px);
     }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navigation.css";
+import "./navigation.css";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import sideBar1 from "../../assets/header-navigationIcon-mobile.png";

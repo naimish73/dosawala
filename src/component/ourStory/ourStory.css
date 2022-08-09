@@ -1,0 +1,10 @@
+@media screen and (min-width: 1151px) {
+    .ourStory {
+        padding-top: 390px;
+        background: linear-gradient(
+            180deg,
+            #e4f0fa 0%,
+            rgba(228, 240, 250, 0) 100%
+        );
+    }
+}
