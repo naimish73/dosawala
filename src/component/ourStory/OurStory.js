@@ -42,12 +42,15 @@ function OurStory() {
                         </p>
                     </div>
                 </div>
-                <div className="ourStory-section-head">
-                    <div>discover</div>
-                    <div>Special dish</div>
-                </div>
-                <div className="ourStory-section-images"></div>
             </div>
+            <div className="ourStory-section-head">
+                <div className="ourStory-section-head1">Discover</div>
+                <div className="ourStory-section-head2">
+                    <span className="ourStory-section-head2-s">S</span>
+                    pecial dish
+                </div>
+            </div>
+            <div className="ourStory-section-images"></div>
         </div>
     );
 }
