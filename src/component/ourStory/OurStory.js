@@ -2,6 +2,10 @@ import React from "react";
 import "./ourStory.css";
 import peopleImage from "../../assets/home-ourStory-peopleImage.png";
 import arrow from "../../assets/home-ourStory-arrow.svg";
+import dish1 from "../../assets/home-ourStory-dish1.png";
+import dish2 from "../../assets/home-ourStory-dish2.png";
+import dish3 from "../../assets/home-ourStory-dish3.png";
+import welcome from "../../assets/home-ourStory-welcome.png";
 
 function OurStory() {
     return (
@@ -44,13 +48,54 @@ function OurStory() {
                 </div>
             </div>
             <div className="ourStory-section-head">
-                <div className="ourStory-section-head1">Discover</div>
-                <div className="ourStory-section-head2">
-                    <span className="ourStory-section-head2-s">S</span>
-                    pecial dish
+                {/* ourStory-section-head-part1 is extra div added for adjustment also there is css added in this div */}
+                <div className="ourStory-section-head-part1">
+                    <div className="ourStory-section-head1">Discover</div>
+                    <div className="ourStory-section-head2">
+                        <span className="ourStory-section-head2-s">S</span>
+                        pecial dish
+                    </div>
+                </div>
+                <div className="ourStory-section-images">
+                    <div className="ourStory-section-images-dishes">
+                        <div className="ourStory-section-images-dish">
+                            <img src={dish1} alt="dosa dish 1" />
+                            <div className="ourStory-section-images-dish-name">
+                                Kara Mura
+                            </div>
+                            <div className="ourStory-section-images-dish-type">
+                                Masala dosa
+                            </div>
+                        </div>
+
+                        <div className="ourStory-section-images-dish">
+                            <img src={dish2} alt="dosa dish 2" />
+                            <div className="ourStory-section-images-dish-name">
+                                Rava schezwan Dosa
+                            </div>
+                            <div className="ourStory-section-images-dish-type">
+                                supreme dosai
+                            </div>
+                        </div>
+
+                        <div className="ourStory-section-images-dish">
+                            <img src={dish3} alt="dosa dish 3" />
+                            <div className="ourStory-section-images-dish-name">
+                                Cone shape
+                            </div>
+                            <div className="ourStory-section-images-dish-type">
+                                Special masala dosa
+                            </div>
+                        </div>
+                    </div>
+                    <div className="ourStory-section-images-welcome">
+                        <img src={welcome} alt="welcome" />
+                        <div className="ourStory-section-images-welcome-text">
+                            Test with Love
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="ourStory-section-images"></div>
         </div>
     );
 }
