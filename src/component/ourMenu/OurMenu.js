@@ -4,6 +4,10 @@ import dosaImage from "../../assets/home-ourMenu-dosaImage.png";
 import foodImage from "../../assets/home-ourMenu-foodImage.png";
 import arrow from "../../assets/home-ourStory-arrow.svg";
 import imageDining from "../../assets/home-ourMenu-imageDining.png";
+import mailLogo from "../../assets/home-ourMenu-mailLogo.svg";
+import phoneLogo from "../../assets/home-ourMenu-phoneLogo.svg";
+import leftArrow from "../../assets/home-ourMenu-leftArrow.svg";
+import rightArrow from "../../assets/home-ourMenu-rightArrow.svg";
 
 function OurMenu() {
     return (
@@ -129,13 +133,55 @@ function OurMenu() {
                         reprehenderit in voluptate velit esse cillum dolore eu
                         fugiat null
                     </p>
-                    <p className="ourMenu-contact-content-mail"></p>
-                    <p className="ourMenu-contact-content-contact"></p>
+                    <p className="ourMenu-contact-content-mail">
+                        <span>
+                            <img src={mailLogo} alt="email logo" />
+                        </span>
+                        info@dosawalaindia.com
+                    </p>
+                    <p className="ourMenu-contact-content-contact">
+                        <span>
+                            <img src={phoneLogo} alt="phone logo" />
+                        </span>
+                        +91 8510957376
+                    </p>
                 </div>
                 <div className="ourMenu-contact-imageDining">
                     <img src={imageDining} alt="dining table" />
                 </div>
             </div>
+            <div className="ourMenu-contact-imageDining-desc">
+                Authentic South Indian Taste. <br /> Introducing first time
+                ever! Unlimited South Indian Meal
+            </div>
+            <div className="ourMenu-customer">
+                <div className="ourMenu-customer-head1">What</div>
+                <div className="ourMenu-customer-head2">
+                    {" "}
+                    <span className="ourMenu-customer-head2-o">O</span>ur
+                    constomer says
+                </div>
+                <div className="ourMenu-customer-reviews">
+                    <div>
+                        <img src={leftArrow} alt="left arrow" />
+                    </div>
+                    <div className="ourMenu-customer-review">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat null”
+                    </div>
+
+                    <div>
+                        <img src={rightArrow} alt="right arrow" />
+                    </div>
+                </div>
+                <div className="ourMenu-customer-auther">Mr. sachin Rathor</div>
+            </div>
+            <div className="ourMenu-maps"></div>
         </div>
     );
 }
