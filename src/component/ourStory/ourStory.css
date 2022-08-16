@@ -162,11 +162,7 @@
 @media screen and (min-width: 1151px) {
     .ourStory {
         padding-top: 300px;
-        background: linear-gradient(
-            180deg,
-            #e4f0fa 0%,
-            rgba(228, 240, 250, 0) 100%
-        );
+        background: linear-gradient(180deg, #e4f0fa 0%, #fcfbef 100%);
     }
     .ourStory-section-mobileImage {
         display: none;
@@ -261,6 +257,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        padding-bottom: 180px;
     }
     .ourStory-section-images-welcome {
         background-color: #ffcc28;
@@ -268,7 +265,7 @@
         width: 607px;
     }
     .ourStory-section-images-welcome img {
-        margin: 17% 32% 180px 32%;
+        margin: 17% 32% 0 32%;
     }
     .ourStory-section-images-welcome-text {
         color: #fdfbf4;
