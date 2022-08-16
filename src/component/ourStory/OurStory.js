@@ -1,4 +1,4 @@
-import React from "react";
+// import React, { useState } from "react";
 import "./ourStory.css";
 import peopleImage from "../../assets/home-ourStory-peopleImage.png";
 import arrow from "../../assets/home-ourStory-arrow.svg";
@@ -6,12 +6,23 @@ import dish1 from "../../assets/home-ourStory-dish1.png";
 import dish2 from "../../assets/home-ourStory-dish2.png";
 import dish3 from "../../assets/home-ourStory-dish3.png";
 import welcome from "../../assets/home-ourStory-welcome.png";
+import peopleImageMobile from "../../assets/home-ourStory-peopleImage-mobile.png";
 
 function OurStory() {
+    // const [img, setImg] = useState(false);
     return (
         <div className="ourStory">
             <div className="ourStory-section">
-                <img src={peopleImage} alt="group of people" />
+                <img
+                    src={peopleImage}
+                    className="ourStory-section-desktopImage"
+                    alt="group of people"
+                />
+                <img
+                    src={peopleImageMobile}
+                    className="ourStory-section-mobileImage"
+                    alt="group of people mobile"
+                />
                 <div className="ourStory-section-content">
                     <div className="ourStory-section-content-head">
                         <span className="ourStory-section-content-head-o">
@@ -20,19 +31,35 @@ function OurStory() {
                         ur Story
                     </div>
                     <div className="ourStory-section-content-para">
-                        <p>
+                        <p className="ourStory-section-content-para1">
                             Dosawala is the best South Indian restaurant brand
                             that has more than a decade of experience in serving
                             authentic and contemporary delicacies of South
                             Indian cuisine. We are established to breathe a new
                             life into the traditional
                         </p>
-                        <p>
+                        <p className="ourStory-section-content-para1-mobile">
+                            In a world that is increasingly coming closer, we
+                            seek to promote the harmony of Indian culture,
+                            cuisine and experience. Celebrating southern dining
+                            in all its glory, we use the finest ingredients,
+                            often flown in from different parts of South India,
+                            to create mouth-watering delicacies for a truly
+                            authentic and unforgettable dining experience.
+                        </p>
+                        <p className="ourStory-section-content-para2">
                             South Indian cuisine and present it to the world in
                             a new light. At Dosawala street, we endeavour to
                             cater a unique menu to food conscious customers by
                             modernising traditional south Indian recipes into
                             healthier & tastier dishes.
+                        </p>
+                        <p className="ourStory-section-content-para2-mobile">
+                            providing the world with a different traditional
+                            experience and considering our youth going to Morden
+                            era we have created the cuisine and menu to serving
+                            authentic and contemporary delicacies South Indian
+                            food with our decade of experience.
                         </p>
                         <p className="ourStory-section-content-para3">
                             Know more
