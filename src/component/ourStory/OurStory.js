@@ -18,11 +18,13 @@ function OurStory() {
                     className="ourStory-section-desktopImage"
                     alt="group of people"
                 />
-                <img
-                    src={peopleImageMobile}
-                    className="ourStory-section-mobileImage"
-                    alt="group of people mobile"
-                />
+                <div className="ourStory-section-mobileImage">
+                    <img
+                        src={peopleImageMobile}
+                        className="ourStory-section-mobileImage"
+                        alt="group of people mobile"
+                    />
+                </div>
                 <div className="ourStory-section-content">
                     <div className="ourStory-section-content-head">
                         <span className="ourStory-section-content-head-o">
@@ -73,6 +75,14 @@ function OurStory() {
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className="ourStory-image-mobile">
+                <span className="ourStory-image-welcome-mobile">
+                    <img src={welcome} alt="welcome" />
+                </span>
+                <span className="ourStory-image-text-mobile">
+                    Test with Love
+                </span>
             </div>
             <div className="ourStory-section-head">
                 {/* ourStory-section-head-part1 is extra div added for adjustment also there is css added in this div */}
