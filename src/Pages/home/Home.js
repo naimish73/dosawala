@@ -4,6 +4,7 @@ import Navigation from "../../component/navigation/Navigation.js";
 import FirstPage from "../../component/firstPage/FirstPage";
 import OurStory from "../../component/ourStory/OurStory";
 import OurMenu from "../../component/ourMenu/OurMenu";
+import Footer from "../../component/footer/Footer";
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <FirstPage />
             <OurStory />
             <OurMenu />
+            <Footer />
         </div>
     );
 }

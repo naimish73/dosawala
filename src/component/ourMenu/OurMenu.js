@@ -9,12 +9,17 @@ import phoneLogo from "../../assets/home-ourMenu-phoneLogo.svg";
 import leftArrow from "../../assets/home-ourMenu-leftArrow.svg";
 import rightArrow from "../../assets/home-ourMenu-rightArrow.svg";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+import {
+    findAllByPlaceholderText,
+    findByLabelText,
+} from "@testing-library/react";
 
 function OurMenu(props) {
     const myStyles = {
         width: "90%",
         height: "505px",
         margin: "0 auto",
+        display: "flex",
     };
     return (
         <div className="ourMenu">
@@ -187,7 +192,8 @@ function OurMenu(props) {
                 </div>
                 <div className="ourMenu-customer-auther">Mr. sachin Rathor</div>
             </div>
-            <span className="ourMenu-maps">
+
+            <div className="ourMenu-maps">
                 <Map
                     google={props.google}
                     zoom={18}
@@ -211,7 +217,7 @@ function OurMenu(props) {
                         }}
                     />
                 </Map>
-            </span>
+            </div>
         </div>
     );
 }
