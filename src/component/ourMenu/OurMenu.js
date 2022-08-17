@@ -8,8 +8,14 @@ import mailLogo from "../../assets/home-ourMenu-mailLogo.svg";
 import phoneLogo from "../../assets/home-ourMenu-phoneLogo.svg";
 import leftArrow from "../../assets/home-ourMenu-leftArrow.svg";
 import rightArrow from "../../assets/home-ourMenu-rightArrow.svg";
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 
-function OurMenu() {
+function OurMenu(props) {
+    const myStyles = {
+        width: "90%",
+        height: "505px",
+        margin: "0 auto",
+    };
     return (
         <div className="ourMenu">
             <div className="ourMenu-findAbout">Find About</div>
@@ -181,9 +187,35 @@ function OurMenu() {
                 </div>
                 <div className="ourMenu-customer-auther">Mr. sachin Rathor</div>
             </div>
-            <div className="ourMenu-maps"></div>
+            <span className="ourMenu-maps">
+                <Map
+                    google={props.google}
+                    zoom={18}
+                    style={myStyles}
+                    defaultZoom={18}
+                    initialCenter={{
+                        lat: 23.077044612962485,
+                        lng: 72.52145732490102,
+                    }}
+                >
+                    <Marker
+                        onClick={() =>
+                            window.open(
+                                "https://maps.app.goo.gl/ZrBqQQjBPg4zTgU38",
+                                "_blank"
+                            )
+                        }
+                        position={{
+                            lat: 23.077044612962485,
+                            lng: 72.52145732490102,
+                        }}
+                    />
+                </Map>
+            </span>
         </div>
     );
 }
 
-export default OurMenu;
+export default GoogleApiWrapper({
+    apiKey: "AIzaSyBKQ8Of6_RXTedGZJuFw144ETVfyY-ZKkY",
+})(OurMenu);
