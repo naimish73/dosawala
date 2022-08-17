@@ -9,18 +9,8 @@ import phoneLogo from "../../assets/home-ourMenu-phoneLogo.svg";
 import leftArrow from "../../assets/home-ourMenu-leftArrow.svg";
 import rightArrow from "../../assets/home-ourMenu-rightArrow.svg";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
-import {
-    findAllByPlaceholderText,
-    findByLabelText,
-} from "@testing-library/react";
 
 function OurMenu(props) {
-    const myStyles = {
-        width: "90%",
-        height: "505px",
-        margin: "0 auto",
-        display: "flex",
-    };
     return (
         <div className="ourMenu">
             <div className="ourMenu-findAbout">Find About</div>
@@ -173,7 +163,7 @@ function OurMenu(props) {
                     constomer says
                 </div>
                 <div className="ourMenu-customer-reviews">
-                    <div>
+                    <div className="ourMenu-customer-reviews-leftArrow">
                         <img src={leftArrow} alt="left arrow" />
                     </div>
                     <div className="ourMenu-customer-review">
@@ -185,8 +175,7 @@ function OurMenu(props) {
                         reprehenderit in voluptate velit esse cillum dolore eu
                         fugiat null”
                     </div>
-
-                    <div>
+                    <div className="ourMenu-customer-reviews-rightArrow">
                         <img src={rightArrow} alt="right arrow" />
                     </div>
                 </div>
@@ -197,7 +186,6 @@ function OurMenu(props) {
                 <Map
                     google={props.google}
                     zoom={18}
-                    style={myStyles}
                     defaultZoom={18}
                     initialCenter={{
                         lat: 23.077044612962485,

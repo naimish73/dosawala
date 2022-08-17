@@ -238,6 +238,12 @@
         justify-content: space-between;
         margin: 0 auto;
     }
+    .ourMenu-customer-reviews-rightArrow {
+        margin: auto 0;
+    }
+    .ourMenu-customer-reviews-leftArrow {
+        margin: auto 0;
+    }
     .ourMenu-customer {
         display: flex;
         flex-direction: column;
@@ -253,7 +259,16 @@
         margin-top: 35px;
         margin-bottom: 164px;
     }
-    .ourMenu-maps-container {
-        width: 100%;
+    .ourMenu-maps {
+        width: 90%;
+        margin: 0 auto;
+        height: 500px;
+        position: relative;
+        margin-bottom: 80px;
+        /* width: 100%; */
+        /* height: max-content; */
+        /* margin-bottom: 50%; */
+        /* margin-top: 50%; */
+        background-color: #fcfbef;
     }
 }

@@ -1,0 +1,138 @@
+@media screen and (max-width: 1150px) {
+    .footer {
+        display: none;
+    }
+}
+@media screen and (min-width: 1150px) {
+    .footer {
+        background-color: #fcfbef;
+    }
+    .footer-address-head {
+        color: #0c691b;
+        font-family: "Nunito";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24.55px;
+        margin-bottom: 40px;
+    }
+    .footer-address-content {
+        color: #666666;
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 33.67px;
+        text-transform: capitalize;
+    }
+    .footer-contacts-head {
+        color: #0c691b;
+        font-family: "Nunito";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24.55px;
+        margin-bottom: 40px;
+    }
+    .footer-contacts-contact {
+        color: #666666;
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 33.67px;
+        text-transform: capitalize;
+    }
+    .footer-links-head {
+        color: #0c691b;
+        font-family: "Nunito";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24.55px;
+        margin-bottom: 40px;
+    }
+    .footer-links-list-items {
+        color: #666666;
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 33.67px;
+        text-transform: capitalize;
+        margin-left: 11px;
+    }
+    /* .footer-links-list img {
+        margin: auto 0 !important;
+    } */
+    .footer-socialMedia-head {
+        color: #0c691b;
+        font-family: "Nunito";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24.55px;
+        margin-bottom: 40px;
+    }
+    .footer-socialMedia-items {
+        color: #666666;
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 33.67px;
+        text-transform: capitalize;
+        margin-left: 23px;
+    }
+    .footer-instagram-head {
+        color: #0c691b;
+        font-family: "Nunito";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24.55px;
+    }
+    .footer-address {
+        width: 16%;
+    }
+    .footer-instagram {
+        width: 19%;
+    }
+    .footer-instagram-images {
+        column-count: 3;
+        padding-top: 40px;
+    }
+    .footer-instagram-image {
+        padding-bottom: 13px;
+        padding-right: 13px;
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-backToTop {
+        writing-mode: vertical-rl;
+        background-color: #fcfbef;
+        width: 2.5%;
+        display: flex;
+        margin-top: 80px;
+    }
+    .footer-backToTop img {
+        padding: 10px;
+        background-color: white;
+    }
+    .footer-backToTop-content {
+        padding-right: 6px;
+        padding-bottom: 10px;
+        background-color: white;
+    }
+    .footer-hr {
+        width: 90%;
+        margin: 82px auto 0 auto;
+    }
+    .footer-copyright {
+        text-align: center;
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 13px;
+        margin-bottom: 19px;
+    }
+    .footer-copyright-hilight {
+        color: #034204;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}

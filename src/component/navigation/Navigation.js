@@ -10,7 +10,7 @@ function Navigation() {
 
     return (
         <>
-            <div className="navigation">
+            <div className="navigation" id="navBar">
                 <div className="navigation-logo">
                     <Link to="/">
                         <img src={logo} alt="logo of dosawala" />
