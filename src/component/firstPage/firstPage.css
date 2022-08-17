@@ -1,5 +1,14 @@
 @media screen and (max-width: 1150px) {
-    .firstPage {
+    .firstPage-text {
+        display: none;
+    }
+    .firstPage-button {
+        display: none;
+    }
+    .firstPage-waveImage {
+        display: none;
+    }
+    .dosaImage {
         display: none;
     }
 }

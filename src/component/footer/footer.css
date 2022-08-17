@@ -2,6 +2,12 @@
     .footer {
         display: none;
     }
+    .footer-hr {
+        display: none;
+    }
+    .footer-copyright {
+        display: none;
+    }
 }
 @media screen and (min-width: 1150px) {
     .footer {
@@ -108,6 +114,7 @@
         width: 2.5%;
         display: flex;
         margin-top: 80px;
+        cursor: pointer;
     }
     .footer-backToTop img {
         padding: 10px;

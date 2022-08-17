@@ -15,18 +15,19 @@ function OurMenu(props) {
         <div className="ourMenu">
             <div className="ourMenu-findAbout">Find About</div>
             <div className="ourMenu-ourMenu">Our Menu</div>
+
             <div className="ourMenu-nav">
-                <span className="ourMenu-nav-item">Vadai & upma</span>
-                <span
-                    className="ourMenu-nav-item"
-                    id="ourMenu-nav-item-classic"
-                >
+                <div id="vadai" className="ourMenu-nav-item">
+                    Vadai & upma
+                </div>
+                <div className="ourMenu-nav-item" id="ourMenu-nav-item-classic">
                     Classic
-                </span>
-                <span className="ourMenu-nav-item">Premium</span>
-                <span className="ourMenu-nav-item">Supreme</span>
-                <span className="ourMenu-nav-item">Signature</span>
+                </div>
+                <div className="ourMenu-nav-item">Premium</div>
+                <div className="ourMenu-nav-item">Supreme</div>
+                <div className="ourMenu-nav-item">Signature</div>
             </div>
+
             <div className="ourMenu-classic">
                 <div className="ourMenu-classic-list">
                     <div className="ourMenu-classic-list-item">
