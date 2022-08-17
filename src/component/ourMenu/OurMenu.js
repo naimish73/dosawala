@@ -5,10 +5,16 @@ import foodImage from "../../assets/home-ourMenu-foodImage.png";
 import arrow from "../../assets/home-ourStory-arrow.svg";
 import imageDining from "../../assets/home-ourMenu-imageDining.png";
 import mailLogo from "../../assets/home-ourMenu-mailLogo.svg";
+import mailLogoAlt from "../../assets/home-ourMenu-mailLogo.svg";
 import phoneLogo from "../../assets/home-ourMenu-phoneLogo.svg";
+import phoneLogoAlt from "../../assets/home-ourMenu-phoneLogo.svg";
 import leftArrow from "../../assets/home-ourMenu-leftArrow.svg";
 import rightArrow from "../../assets/home-ourMenu-rightArrow.svg";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+import swiggy from "../../assets/home-ourMenu-swiggy-mobile.png";
+import zomato from "../../assets/home-ourMenu-zomato-mobile.png";
+import bigDosa from "../../assets/home-ourMenu-bigDosa-mobile.png";
+import groupPhoto from "../../assets/home-ourMenu-groupPhoto-mobile.png";
 
 function OurMenu(props) {
     return (
@@ -77,6 +83,21 @@ function OurMenu(props) {
                     <img src={dosaImage} alt="dosa beside list items" />
                 </div>
             </div>
+            <div className="ourMenu-extra-mobile">
+                <img src={swiggy} alt="swiggy logo" className="swiggy" />
+                <img src={zomato} alt="zomato logo" className="zomato" />
+                <div className="ourMenu-extra-mobile-whooHoo">Whoo-hoo!!</div>
+                <div className="ourMenu-extra-mobile-content">
+                    Now you can order a meal right from your mobile via our
+                    partner swiggi and zomato and enjoy south Indian cuisine at
+                    home with the best offers and non-touch delivery.
+                </div>
+                <img
+                    src={bigDosa}
+                    alt="chef with big dosa"
+                    className="bigDosa"
+                />
+            </div>
             <div className="ourMenu-vision">
                 <div className="ourMenu-vision-foodImage">
                     <img src={foodImage} alt="full dish food" />
@@ -91,31 +112,33 @@ function OurMenu(props) {
                         </span>{" "}
                         Winning Franchise Team
                     </div>
-                    <p className="ourMenu-vision-content-para1">
-                        Dosawala strives to provide its customers, the
-                        healthiest and wholesome meal at a very affordable
-                        prices and to generate prots for the benet of the
-                        franchise in a short duration of time. Dosawala dedicate
-                        to ensure the success of our franchisee associates by
-                        focussing and providing exclusive support and service on
-                        committed environment
-                    </p>
-                    <p className="ourMenu-vision-content-para2">
-                        To spread the product across the globe through our chain
-                        of retail outlets. Our brand chain special taste makers
-                        and ingredients will spread a standard avor of taste
-                        all over the country
-                    </p>
-                    <p className="ourMenu-vision-content-para3">
-                        Know more
-                        <img
-                            className="ourMenu-vision-content-arrow"
-                            src={arrow}
-                            alt="arrow"
-                        />
-                        <img src={arrow} alt="arrow" />
-                        <img src={arrow} alt="arrow" />
-                    </p>
+                    <div className="ourMenu-vision-content-para">
+                        <p className="ourMenu-vision-content-para1">
+                            Dosawala strives to provide its customers, the
+                            healthiest and wholesome meal at a very affordable
+                            prices and to generate prots for the benet of the
+                            franchise in a short duration of time. Dosawala
+                            dedicate to ensure the success of our franchisee
+                            associates by focussing and providing exclusive
+                            support and service on committed environment
+                        </p>
+                        <p className="ourMenu-vision-content-para2">
+                            To spread the product across the globe through our
+                            chain of retail outlets. Our brand chain special
+                            taste makers and ingredients will spread a standard
+                            avor of taste all over the country
+                        </p>
+                        <p className="ourMenu-vision-content-para3">
+                            Know more
+                            <img
+                                className="ourMenu-vision-content-arrow"
+                                src={arrow}
+                                alt="arrow"
+                            />
+                            <img src={arrow} alt="arrow" />
+                            <img src={arrow} alt="arrow" />
+                        </p>
+                    </div>
                 </div>
             </div>
             <div className="ourMenu-contact">
@@ -126,6 +149,20 @@ function OurMenu(props) {
                     <div className="ourMenu-contact-content-head2">
                         Franchise Inquiry
                     </div>
+                    <div className="ourMenu-contact-mobile">
+                        <img src={groupPhoto} alt="group of peple" />
+                        <div className="ourMenu-contact-content-para1-alt">
+                            we are looking for a winning group of people to be
+                            part of our mission and run our franchise to a
+                            different place across the country and create an
+                            unmatched experience by maintaining the highest
+                            standard of quality, hygiene, service and customer
+                            satisfaction. and To repeatedly offer value addition
+                            in all spheres thereby inducing loyalty by patrons.
+                            To capture, recreate and replicate the brand
+                            experience in as many areas as possible.
+                        </div>
+                    </div>
                     <p className="ourMenu-contact-content-para1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -135,18 +172,38 @@ function OurMenu(props) {
                         reprehenderit in voluptate velit esse cillum dolore eu
                         fugiat null
                     </p>
-                    <p className="ourMenu-contact-content-mail">
-                        <span>
-                            <img src={mailLogo} alt="email logo" />
-                        </span>
-                        info@dosawalaindia.com
-                    </p>
-                    <p className="ourMenu-contact-content-contact">
-                        <span>
-                            <img src={phoneLogo} alt="phone logo" />
-                        </span>
-                        +91 8510957376
-                    </p>
+                    <div className="ourMenu-contact-contect-info">
+                        <p className="ourMenu-contact-content-mail">
+                            <span>
+                                <div className="ourMenu-contact-content-mail-image-logo">
+                                    <img src={mailLogo} alt="email logo" />
+                                </div>
+                                <div className="ourMenu-contact-content-mail-image-logoAlt">
+                                    <img src={mailLogoAlt} alt="email logo" />
+                                </div>
+                            </span>
+                            <div className="ourMenu-contact-content-mail-info">
+                                info@dosawalaindia.com
+                            </div>
+                            <div className="ourMenu-contact-content-mail-franchise">
+                                franchise@dosawalaindia.com
+                            </div>
+                        </p>
+                        <p className="ourMenu-contact-content-contact">
+                            <span>
+                                <div className="ourMenu-contact-content-phone-image-logo">
+                                    <img src={phoneLogo} alt="phone logo" />
+                                </div>
+                                <div className="ourMenu-contact-content-phone-image-logoAlt">
+                                    <img src={phoneLogoAlt} alt="phone logo" />
+                                </div>
+                            </span>
+
+                            <div className="ourMenu-contact-content-phone">
+                                +91 8510957376
+                            </div>
+                        </p>
+                    </div>
                 </div>
                 <div className="ourMenu-contact-imageDining">
                     <img src={imageDining} alt="dining table" />
